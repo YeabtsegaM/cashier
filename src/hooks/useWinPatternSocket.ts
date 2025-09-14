@@ -39,7 +39,7 @@ export function useWinPatternSocket({
     if (!token) return;
 
     // Connect to socket server
-    socketRef.current = io(process.env.NEXT_PUBLIC_SOCKET_URL || 'http://localhost:5000', {
+    socketRef.current = io(process.env.NEXT_PUBLIC_SOCKET_URL || 'https://api-yebingo-com.onrender.com', {
       query: {
         cashierId,
         token,
