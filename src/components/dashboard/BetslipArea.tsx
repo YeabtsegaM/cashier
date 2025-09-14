@@ -612,7 +612,7 @@ export function BetslipArea({
     
     // CRITICAL FIX: Also call the server endpoint for connection status
     try {
-      const response = await fetch(`http://localhost:5000/api/display/connection-status/${sessionId}`);
+      const response = await fetch(`https://api-yebingo-com.onrender.com/api/display/connection-status/${sessionId}`);
       if (response.ok) {
         const result = await response.json();
         if (result.success) {
