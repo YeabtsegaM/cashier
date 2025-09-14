@@ -43,7 +43,7 @@ export function useCartelaSocket({
 
     console.log('🔌 useCartelaSocket: Establishing socket connection for:', { cashierId, sessionId });
 
-    const newSocket = io('http://localhost:5000', {
+    const newSocket = io('https://api-yebingo-com.onrender.com', {
       query: {
         cashierId,
         token,
