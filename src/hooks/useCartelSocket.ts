@@ -25,7 +25,7 @@ export function useCartelSocket({
     const token = localStorage.getItem('cashierToken');
     if (!token) return;
 
-    const newSocket = io('http://localhost:5000', {
+    const newSocket = io('https://api-yebingo-com.onrender.com', {
       query: {
         cashierId,
         token,
